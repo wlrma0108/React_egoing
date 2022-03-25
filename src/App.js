@@ -16,23 +16,26 @@ function Nav(){
 
   </nav>
 }
-function Articla(){
+function Article(){
   return<article>
 
 
   </article>
 }
 function App() {
+  const topics =[
+   {id:1,title:'html',body:'html is ...'},
+   {id:2,title:'css',body:'css is ...'},
+   {id:3,title:'js',body:'javascript is ...'}
+
+
+  ]
   return (
+    
     <div className="App">
-      <Header>
-      <Nav>
-       
-      </Nav>
-      <article>
-          
-        </article>
-      </Header>
+      <Header></Header>
+      <Nav topics={topics}> </Nav>
+      <Article title="welcome" body="hello,Web"></Article>
     </div>
   );
 }
